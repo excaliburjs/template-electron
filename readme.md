@@ -4,6 +4,8 @@ This example shows how to use [Electron](http://electron.atom.io/) to distribute
 to Mac, Linux, and PC desktops. It is built on 
 [electron-boilerplate](https://github.com/sindresorhus/electron-boilerplate).
 
+![Electron](https://cloud.githubusercontent.com/assets/563819/21593476/23dbd4f4-d0dd-11e6-94a8-f52c37fd3237.png)
+
 ## Launch
 
     # Install dependencies
