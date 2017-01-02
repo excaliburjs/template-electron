@@ -1,0 +1,45 @@
+{
+  "name": "app",
+  "productName": "App",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "user/repo",
+  "author": {
+    "name": "Excalibur.js Team",
+    "email": "",
+    "url": "https://github.com/excaliburjs"
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "node_modules/.bin/tsc -p game && electron .",
+    "build": "node_modules/.bin/tsc -p game && electron-packager . --out=dist --asar --overwrite --all"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "electron-debug": "^1.0.0"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron": "^1.0.1",
+    "electron-packager": "^8.0.0",
+    "excalibur": "^0.8.0-alpha.1254",
+    "typescript": "^2.1.4",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
