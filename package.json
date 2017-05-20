@@ -28,11 +28,11 @@
     "electron-debug": "^1.0.0"
   },
   "devDependencies": {
-    "devtron": "^1.1.0",
-    "electron": "^1.0.1",
-    "electron-packager": "^8.0.0",
-    "excalibur": "^0.8.0-alpha.1254",
-    "typescript": "~2.1.4",
+    "devtron": "^1.4.0",
+    "electron": "^1.6.8",
+    "electron-packager": "^8.7.0",
+    "excalibur": "^0.10.0",
+    "typescript": "^2.3.2",
     "xo": "^0.16.0"
   },
   "xo": {
