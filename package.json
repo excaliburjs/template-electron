@@ -25,13 +25,13 @@
     "electron"
   ],
   "dependencies": {
-    "electron-debug": "1.0.0"
+    "electron-debug": "1.0.0",
+    "excalibur": "0.14.0"
   },
   "devDependencies": {
     "devtron": "1.4.0",
     "electron": "1.6.8",
     "electron-packager": "8.7.0",
-    "excalibur": "0.10.0",
     "typescript": "2.3.2",
     "xo": "0.16.0"
   },
