@@ -1,4 +1,4 @@
-# Exalibur Electron Example
+# Excalibur Electron Example
 
 This example shows how to use [Electron](http://electron.atom.io/) to distribute your Excalibur game 
 to Mac, Linux, and PC desktops. It is built on 
