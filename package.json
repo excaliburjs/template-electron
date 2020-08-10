@@ -25,7 +25,7 @@
     "electron"
   ],
   "dependencies": {
-    "electron-debug": "1.0.0",
+    "electron-debug": "^3.1.0",
     "excalibur": "^0.24.3"
   },
   "devDependencies": {
