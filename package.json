@@ -29,7 +29,7 @@
     "excalibur": "^0.24.3"
   },
   "devDependencies": {
-    "devtron": "1.4.0",
+    "devtron": "^1.4.0",
     "electron": "^9.2.0",
     "electron-packager": "^15.0.0",
     "typescript": "^3.9.7",
