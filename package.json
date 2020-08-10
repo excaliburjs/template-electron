@@ -31,7 +31,7 @@
   "devDependencies": {
     "devtron": "1.4.0",
     "electron": "^9.2.0",
-    "electron-packager": "8.7.0",
+    "electron-packager": "^15.0.0",
     "typescript": "^3.9.7",
     "xo": "^0.32.1"
   },
