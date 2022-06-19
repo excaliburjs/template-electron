@@ -2,10 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Electron boilerplate</title>
+		<meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+		<title>My Cool Excalibur Game</title>
 		<link rel="stylesheet" href="index.css">
 	</head>
 	<body>
-		<script>require('./game/index')</script>
+		<script type="module" script-src="self" src="./game/index.ts"></script>
 	</body>
 </html>

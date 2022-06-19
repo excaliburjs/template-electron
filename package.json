@@ -7,13 +7,13 @@
   "repository": "user/repo",
   "author": {
     "name": "Excalibur.js Team",
-    "email": "",
     "url": "https://github.com/excaliburjs"
   },
   "scripts": {
-    "test": "xo",
-    "start": "node_modules/.bin/tsc -p game && electron .",
-    "build": "node_modules/.bin/tsc -p game && electron-packager . --out=dist --asar --overwrite --all"
+    "build-game": "parcel build ./index.html --dist-dir ./dist --public-url ./",
+    "start": "npm run build-game && electron .",
+    "build": "npm run build-game && electron-packager . excalibur-game --platform=all --out=./binary-dist",
+    "test": "npm run build && playwright test"
   },
   "files": [
     "index.js",
@@ -25,21 +25,16 @@
     "electron"
   ],
   "dependencies": {
-    "electron-debug": "1.0.0",
-    "excalibur": "0.14.0"
+    "excalibur": "0.26.0"
   },
   "devDependencies": {
-    "devtron": "1.4.0",
-    "electron": "1.6.8",
-    "electron-packager": "8.7.0",
-    "typescript": "2.3.2",
-    "xo": "0.16.0"
-  },
-  "xo": {
-    "esnext": true,
-    "envs": [
-      "node",
-      "browser"
-    ]
+    "@playwright/test": "1.22.2",
+    "electron": "19.0.4",
+    "electron-packager": "15.5.1",
+    "parcel": "2.6.1",
+    "pixelmatch": "5.3.0",
+    "playwright": "1.22.2",
+    "pngjs": "6.0.0",
+    "typescript": "4.7.4"
   }
 }

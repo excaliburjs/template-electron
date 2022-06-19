@@ -1,44 +1,37 @@
 'use strict';
-const electron = require('electron');
-
-const app = electron.app;
-
-// adds debug features like hotkeys for triggering dev tools and reload
-require('electron-debug')();
+const { app, BrowserWindow } = require('electron');
 
 // prevent window being garbage collected
 let mainWindow;
 
-function onClosed() {
+const onClosed = () => {
 	// dereference the window
 	// for multiple windows store them in an array
 	mainWindow = null;
 }
 
-function createMainWindow() {
-	const win = new electron.BrowserWindow({
-		width: 600,
-		height: 400
+const createWindow = () => {
+	const win = new BrowserWindow({
+		width: 800,
+		height: 600
 	});
-
-	win.loadURL(`file://${__dirname}/index.html`);
+	win.removeMenu();// The menu has access to the developer tools if you need to debug your app
+	win.setIcon('./icon.png');
+	win.loadFile('./dist/index.html');
 	win.on('closed', onClosed);
 
 	return win;
 }
 
+app.whenReady().then(() => {
+	createWindow();
+	app.on('activate', () => {
+		if (BrowserWindow.getAllWindows().length === 0) createWindow();
+	});
+});
+
 app.on('window-all-closed', () => {
 	if (process.platform !== 'darwin') {
 		app.quit();
 	}
-});
-
-app.on('activate', () => {
-	if (!mainWindow) {
-		mainWindow = createMainWindow();
-	}
-});
-
-app.on('ready', () => {
-	mainWindow = createMainWindow();
 });
