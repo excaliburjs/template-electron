@@ -25,4 +25,4 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - run: npm run test:ci
+    - run: xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" -- npm run test:ci
