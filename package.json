@@ -12,8 +12,10 @@
   "scripts": {
     "build-game": "parcel build ./index.html --dist-dir ./dist --public-url ./",
     "start": "npm run build-game && electron .",
-    "build": "npm run build-game && electron-packager . excalibur-game --platform=linux,win32 --out=./binary-dist --overwrite",
-    "test": "npm run build && playwright test"
+    "build": "npm run build-game && electron-packager . excalibur-game --platform=all --out=./binary-dist --overwrite",
+    "build:ci": "npm run build-game && electron-packager . excalibur-game --platform=linux --out=./binary-dist --overwrite",
+    "test": "npm run build && playwright test",
+    "test:ci": "npm run build:ci && playwright test"
   },
   "files": [
     "index.js",
