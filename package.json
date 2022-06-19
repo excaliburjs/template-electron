@@ -12,7 +12,7 @@
   "scripts": {
     "build-game": "parcel build ./index.html --dist-dir ./dist --public-url ./",
     "start": "npm run build-game && electron .",
-    "build": "npm run build-game && electron-packager . excalibur-game --platform=all --out=./binary-dist",
+    "build": "npm run build-game && electron-packager . excalibur-game --platform=all --out=./binary-dist --overwrite",
     "test": "npm run build && playwright test"
   },
   "files": [
