@@ -17,8 +17,8 @@ test('example test', async () => {
     // and return its Page object
     const window = await electronApp.firstWindow();
 
-    await expect(window).toHaveScreenshot('expected-start.png');
     await window.screenshot({ path: 'actual.png' });
+    await expect(window).toHaveScreenshot('expected-start.png');
 
     if (fs.existsSync('./actual.png')) {
         const actualImage = PNG.sync.read(fs.readFileSync('./actual.png'));
