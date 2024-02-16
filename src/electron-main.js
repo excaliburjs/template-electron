@@ -22,6 +22,9 @@ const createWindow = () => {
   // building with parcel grab from dist
   mainWindow.loadFile(path.join(__dirname, '..', 'dist', 'index.html'));
 
+  // Remove menu
+  mainWindow.removeMenu();
+
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
 };
