@@ -1,7 +1,7 @@
 import * as ex from 'excalibur';
 
 const game = new ex.Engine({
-    displayMode: ex.DisplayMode.FitScreenAndFill 
+    displayMode: ex.DisplayMode.FitScreenAndFill
 });
 const hello = new ex.Label({
     text: 'Hello Electron! 💖🎉',
