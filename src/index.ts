@@ -1,13 +1,9 @@
 import * as ex from 'excalibur';
-import {Greeter} from "./greeter";
 
-let x = new Greeter("Welcome to Excalibur");
-alert(x.greet());
-
-var game = new ex.Engine({
-    displayMode: ex.DisplayMode.FillScreen 
+const game = new ex.Engine({
+    displayMode: ex.DisplayMode.FitScreenAndFill 
 });
-var hello = new ex.Label({
+const hello = new ex.Label({
     text: 'Hello Electron! 💖🎉',
     pos: game.screen.center,
     color: ex.Color.White,

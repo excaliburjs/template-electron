@@ -4,3 +4,5 @@ game/*.map
 dist/
 binary-dist/
 .parcel-cache
+
+out/
