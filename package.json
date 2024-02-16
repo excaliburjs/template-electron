@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "My Excalibur Electron application description",
   "main": "src/electron-main.js",
+  "license": "BSD-2-Clause",
   "author": {
     "name": "Excalibur.js Team",
     "url": "https://github.com/excaliburjs"
