@@ -17,6 +17,7 @@
     "start": "npm run build-game && electron-forge start",
     "build": "npm run build-game && electron-forge make",
     "build:ci": "npm run build-game && electron-forge make",
+    "test:update-snapshot": "playwright test --update-snapshots",
     "test": "npm run build && playwright test",
     "test:ci": "npm run build:ci && playwright test",
     "package": "npm run build-game && electron-forge package",
@@ -28,7 +29,7 @@
   ],
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
-    "excalibur": "0.28.7"
+    "excalibur": "0.29.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.2.0",
@@ -38,7 +39,7 @@
     "@electron-forge/maker-zip": "^7.2.0",
     "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
     "@playwright/test": "1.41.2",
-    "electron": "28.2.3",
+    "electron": "29.0.0",
     "parcel": "2.11.0",
     "pixelmatch": "5.3.0",
     "playwright": "1.41.2",

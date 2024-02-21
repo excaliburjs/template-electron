@@ -27,6 +27,23 @@ If you need access to the dev tools comment out remove menu, and uncomment the d
     # Package for distribution (run as administrator)
     npm run build
 
+## Updating Test Snapshots
+
+* Windows
+
+   ```powershell
+   npm run test:update-snapshot
+   ```
+
+* Linux for CI
+
+   ```powershell
+   docker run --rm --network host -v C:\projects\template-electron:/work/ -w /work/ -it mcr.microsoft.com/playwright:v1.41.2-jammy /bin/bash
+   npm install
+   xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" -- npm run test:update-snapshot
+   ```
+   
+
 ## Notes
 
 The game files are compiled via TypeScript in the **src** folder. You could easily use a bundler 

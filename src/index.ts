@@ -10,7 +10,8 @@ const hello = new ex.Label({
     font: new ex.Font({
         family: 'Segoe UI Light',
         size: 50,
-        textAlign: ex.TextAlign.Center
+        textAlign: ex.TextAlign.Center,
+        baseAlign: ex.BaseAlign.Alphabetic
     })
 });
 
