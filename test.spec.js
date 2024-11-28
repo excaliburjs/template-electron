@@ -1,7 +1,6 @@
 const { _electron: electron } = require('playwright')
 const { test, expect } = require('@playwright/test')
 const fs = require('fs');
-const { PNG } = require('pngjs');
 
 test('example test', async () => {
     const electronApp = await electron.launch({ args: ['.'] })
