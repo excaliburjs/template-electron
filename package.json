@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "electron-squirrel-startup": "1.0.1",
-    "excalibur": "0.30.0-alpha.1289"
+    "excalibur": "0.30.0-alpha.1295"
   },
   "devDependencies": {
     "@electron-forge/cli": "7.6.0",
