@@ -40,7 +40,7 @@
     "@electron-forge/plugin-auto-unpack-natives": "7.6.0",
     "@playwright/test": "1.49.1",
     "electron": "33.2.1",
-    "parcel": "2.13.2",
+    "parcel": "2.13.3",
     "typescript": "5.7.2"
   }
 }
