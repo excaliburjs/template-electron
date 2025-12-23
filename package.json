@@ -38,7 +38,7 @@
     "@electron-forge/maker-squirrel": "7.6.0",
     "@electron-forge/maker-zip": "7.6.0",
     "@electron-forge/plugin-auto-unpack-natives": "7.6.0",
-    "@playwright/test": "1.49.1",
+    "@playwright/test": "1.57.0",
     "electron": "33.3.1",
     "parcel": "2.13.3",
     "typescript": "5.7.3"
