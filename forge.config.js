@@ -16,10 +16,11 @@ module.exports = {
       name: '@electron-forge/maker-deb',
       config: {},
     },
-    {
-      name: '@electron-forge/maker-rpm',
-      config: {},
-    },
+    // Doesn't work on Erik's Fedora 43 box
+    // {
+    //   name: '@electron-forge/maker-rpm',
+    //   config: {},
+    // },
   ],
   plugins: [
     {
