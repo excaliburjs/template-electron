@@ -41,6 +41,6 @@
     "@playwright/test": "1.59.0",
     "electron": "33.3.1",
     "parcel": "2.16.4",
-    "typescript": "5.7.3"
+    "typescript": "5.9.3"
   }
 }
