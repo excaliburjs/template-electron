@@ -33,12 +33,12 @@
     "excalibur": "^1.0.0"
   },
   "devDependencies": {
-    "@electron-forge/cli": "8.0.0",
-    "@electron-forge/maker-deb": "8.0.0",
-    "@electron-forge/maker-rpm": "8.0.0",
-    "@electron-forge/maker-squirrel": "8.0.0",
-    "@electron-forge/maker-zip": "8.0.0",
-    "@electron-forge/plugin-auto-unpack-natives": "8.0.0",
+    "@electron-forge/cli": "8.0.1",
+    "@electron-forge/maker-deb": "8.0.1",
+    "@electron-forge/maker-rpm": "8.0.1",
+    "@electron-forge/maker-squirrel": "8.0.1",
+    "@electron-forge/maker-zip": "8.0.1",
+    "@electron-forge/plugin-auto-unpack-natives": "8.0.1",
     "@playwright/test": "1.65.0",
     "electron": "45.2.3",
     "parcel": "2.16.4",
