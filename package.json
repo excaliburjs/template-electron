@@ -17,11 +17,12 @@
     "start": "npm run build-game && electron-forge start",
     "build": "npm run build-game && electron-forge make",
     "build:ci": "npm run build-game && electron-forge make",
-    "test:update-snapshot": "playwright test --update-snapshots",
+    "test:update-snapshot": "npm run build-game && playwright test --update-snapshots=all",
     "test": "npm run build && playwright test",
     "test:ci": "npm run build:ci && playwright test",
     "package": "npm run build-game && electron-forge package",
-    "make": "npm run build-game && electron-forge make"
+    "make": "npm run build-game && electron-forge make",
+    "typecheck": "tsc --noEmit -p src/tsconfig.json"
   },
   "keywords": [
     "electron-app",
@@ -29,17 +30,17 @@
   ],
   "dependencies": {
     "electron-squirrel-startup": "1.0.1",
-    "excalibur": "~0.32.0"
+    "excalibur": "^1.0.0"
   },
   "devDependencies": {
-    "@electron-forge/cli": "7.11.2",
-    "@electron-forge/maker-deb": "7.11.2",
-    "@electron-forge/maker-rpm": "7.11.2",
-    "@electron-forge/maker-squirrel": "7.11.2",
-    "@electron-forge/maker-zip": "7.11.2",
-    "@electron-forge/plugin-auto-unpack-natives": "7.11.2",
+    "@electron-forge/cli": "8.0.0",
+    "@electron-forge/maker-deb": "8.0.0",
+    "@electron-forge/maker-rpm": "8.0.0",
+    "@electron-forge/maker-squirrel": "8.0.0",
+    "@electron-forge/maker-zip": "8.0.0",
+    "@electron-forge/plugin-auto-unpack-natives": "8.0.0",
     "@playwright/test": "1.63.0",
-    "electron": "33.3.1",
+    "electron": "45.2.3",
     "parcel": "2.16.4",
     "typescript": "5.9.3"
   }
