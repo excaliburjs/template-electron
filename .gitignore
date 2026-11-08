@@ -6,3 +6,6 @@ binary-dist/
 .parcel-cache
 
 out/
+test-results/
+playwright-report/
+blob-report/

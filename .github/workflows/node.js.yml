@@ -20,4 +20,9 @@ jobs:
       with:
         node-version: 'lts/*'
     - run: npm ci
+    # Type-check before the expensive browser install: this gate is what catches
+    # v1 API removals and options-bag typos (e.g. moveBy durationMs) that the
+    # bundler would otherwise transpile away silently.
+    - name: Type check
+      run: npm run typecheck
     - run: xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" -- npm run test:ci
